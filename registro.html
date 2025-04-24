@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="registro.css">
+  <title>Registro de Aprendiz</title>
+</head>
+<body>
+  <h2>Registrar Aprendiz</h2>
+  <form action="insertar.php" method="POST" enctype="multipart/form-data">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required><br>
+
+    <label>Correo:</label>
+    <input type="email" name="correo" required><br>
+
+    <label>Contraseña:</label>
+    <input type="password" name="contrasena" required><br>
+
+    <label>Teléfono:</label>
+    <input type="text" name="telefono"><br>
+
+    <label>Foto:</label>
+    <input type="file" name="foto"><br><br>
+    
+    <input type="submit" value="Registrar">
+  </form>
+</body>
+</html>
