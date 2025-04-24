@@ -7,4 +7,4 @@ CREATE TABLE PETS_HEAVEN.propietarios(
     contrasena VARCHAR(100) NOT NULL, 
     telefono VARCHAR(20) NOT NULL, 
     foto TEXT NOT NULL
-)
+);
