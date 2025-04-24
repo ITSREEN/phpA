@@ -1,5 +1,6 @@
 <?php
-include 'conexion.php';
+// Imports 
+include_once 'conexion.php';
 
 // Verificar conexión
 if(!isset($conn) || !($conn instanceof mysqli)) {

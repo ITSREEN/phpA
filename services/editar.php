@@ -1,6 +1,6 @@
 <?php
-// Incluir el archivo de conexión al inicio
-require_once 'conexion.php';
+// Imports 
+include_once 'conexion.php';
 
 // Verificar conexión a la base de datos
 if(!isset($conn) || !($conn instanceof mysqli)) {

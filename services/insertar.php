@@ -1,5 +1,6 @@
 <?php
-include 'conexion.php';
+// Imports 
+include_once 'conexion.php';
 
 // Verificar que se recibió el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
