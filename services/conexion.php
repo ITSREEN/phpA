@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
+$host = "127.0.77";
 $usuario = "root";
 $contrasena = ""; 
-$basededatos = "pets_heaven";
+$basededatos = "pets";
 
 $conn = new mysqli($host, $usuario, $contrasena, $basededatos);
 

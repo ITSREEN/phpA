@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS PETS_HEAVEN;
-CREATE DATABASE IF NOT EXISTS PETS_HEAVEN;
-CREATE TABLE PETS_HEAVEN.propietarios(
+DROP DATABASE IF EXISTS pets;
+CREATE DATABASE IF NOT EXISTS pets;
+CREATE TABLE pets.propietarios(
     id_pro INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(20) NOT NULL, 
     correo VARCHAR(100) NOT NULL,
@@ -8,7 +8,7 @@ CREATE TABLE PETS_HEAVEN.propietarios(
     telefono VARCHAR(20) NOT NULL, 
     foto TEXT NOT NULL
 );
-INSERT INTO PETS_HEAVEN.propietarios 
+INSERT INTO pets.propietarios 
 (nombre, correo, contrasena, telefono, foto) 
 VALUES
 ('María González', 'maria.gonzalez@example.com', 'password123', '3001234567', '/uploads/propietarios/maria.jpg'),

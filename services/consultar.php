@@ -126,14 +126,14 @@ $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         echo "<tr>
-                            <td>".htmlspecialchars($row["id"])."</td>
+                            <td>".htmlspecialchars($row["id_pro"])."</td>
                             <td>".htmlspecialchars($row["nombre"])."</td>
                             <td>".htmlspecialchars($row["correo"])."</td>
                             <td>".htmlspecialchars($row["telefono"])."</td>
                             <td><img src='".htmlspecialchars($row["foto"])."' alt='Foto del aprendiz'></td>
                             <td class='actions'>
-                                <a href='editar.php?id=".$row["id"]."'>Editar</a> | 
-                                <a href='eliminar.php?id=".$row["id"]."' onclick='return confirm(\"¿Estás seguro que deseas eliminar este aprendiz?\")'>Eliminar</a>
+                                <a href='./editar.php?id=".$row["id_pro"]."'>Editar</a> | 
+                                <a href='./eliminar.php?id=".$row["id_pro"]."' onclick='return confirm(\"¿Estás seguro que deseas eliminar este aprendiz?\")'>Eliminar</a>
                             </td>
                         </tr>";
                     }
@@ -144,7 +144,7 @@ $result = $conn->query($sql);
             </tbody>
         </table>
         
-        <a href="registro.html" class="add-btn">Agregar Nuevo Aprendiz</a>
+        <a href="../registro.html" class="add-btn">Agregar Nuevo Aprendiz</a>
     </div>
 </body>
 </html>

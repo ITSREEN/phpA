@@ -20,7 +20,7 @@ if(isset($_GET['id'])) {
     }
     
     // Luego eliminamos el registro de la base de datos
-    $sql = "DELETE FROM aprendiz WHERE Id = $id";
+    $sql = "DELETE FROM propietarios WHERE id_pro = $id";
     
     if ($conn->query($sql) === TRUE) {
         header("Location: consultar.php?mensaje=Registro+eliminado+correctamente");
