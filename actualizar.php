@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = mysqli_real_escape_string($conn, $_POST['telefono']);
     
     // Obtener la foto actual con manejo de errores
-    $sql_foto = "SELECT foto FROM aprendiz WHERE Id = ?";
+    $sql_foto = "SELECT foto FROM propietarios WHERE id_pro = ?";
     $stmt_foto = $conn->prepare($sql_foto);
     $stmt_foto->bind_param("i", $id);
     $stmt_foto->execute();
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         
         // Actualizar los datos en la base de datos
-        $stmt = $conn->prepare("UPDATE aprendiz SET nombre=?, correo=?, telefono=?, foto=? WHERE Id=?");
+        $stmt = $conn->prepare("UPDATE propietarios SET nombre=?, correo=?, telefono=?, foto=? WHERE id_pro=?");
         $stmt->bind_param("ssssi", $nombre, $correo, $telefono, $ruta_foto, $id);
         
         if ($stmt->execute()) {

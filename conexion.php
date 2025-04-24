@@ -2,7 +2,7 @@
 $host = "localhost";
 $usuario = "root";
 $contrasena = ""; 
-$basededatos = "colegio";
+$basededatos = "pets_heaven";
 
 $conn = new mysqli($host, $usuario, $contrasena, $basededatos);
 

@@ -6,7 +6,7 @@ if(!isset($conn) || !($conn instanceof mysqli)) {
     die("Error de conexión: No se pudo establecer conexión con la base de datos");
 }
 
-$sql = "SELECT * FROM aprendiz";
+$sql = "SELECT * FROM propietarios";
 $result = $conn->query($sql);
 ?>
 

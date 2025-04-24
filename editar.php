@@ -16,7 +16,7 @@ if(!isset($_GET['id']) || empty($_GET['id'])) {
 $id = intval($_GET['id']); // Convertir a entero por seguridad
 
 // Consulta preparada para obtener los datos del aprendiz
-$sql = "SELECT * FROM aprendiz WHERE Id = ?";
+$sql = "SELECT * FROM propietarios WHERE id_pro = ?";
 $stmt = $conn->prepare($sql);
 
 if(!$stmt) {

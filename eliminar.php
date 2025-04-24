@@ -5,7 +5,7 @@ if(isset($_GET['id'])) {
     $id = $_GET['id'];
     
     // Primero obtenemos la ruta de la foto para eliminarla del servidor
-    $sql_foto = "SELECT foto FROM aprendiz WHERE Id = $id";
+    $sql_foto = "SELECT foto FROM propietarios WHERE id_pro = $id";
     $result = $conn->query($sql_foto);
     
     if ($result->num_rows > 0) {

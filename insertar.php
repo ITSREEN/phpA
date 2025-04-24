@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Insertar en la base de datos (con consulta preparada)
-    $sql = "INSERT INTO aprendiz (nombre, correo, contrasena, telefono, foto) VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO propietarios (nombre, correo, contrasena, telefono, foto) VALUES (?, ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
     
     if ($stmt) {
